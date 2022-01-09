@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>transition option</title>
+<style type="text/css">
+.container{
+	width:100%;
+}
+.move{
+width: 150px;
+height: 50px;
+background-color: red;
+color: #fff;
+font-size: 20px;
+border-radius: 1rem; /*--- 1rem=16px*/
+margin: 1rem;
+padding: 10px;
+text-align: center;
+line-height: 50px;
+transition: all 5s;
+}
+.move:hover{
+	transform: translate(1000px);
+}
+#ease:{
+transition-timing-function:ease ;
+}
+#ease-in{
+transition-timing-function:ease-in ;
+}
+#eas-out{
+transition-timing-function:ease-out ;
+}
+#ease-in-out{
+transition-timing-function:ease-in-out ;
+}
+#linear{
+transition-timing-function:linear;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<div id="ease" class="move">ease </div>	
+<div id="ease-in" class="move">ease-in </div>	
+<div id="ease-out" class="move">ease-out</div>	
+<div id="ease-in-out" class="move">ease-in-out </div>	
+<div id="linear" class="move">linear </div>	
+</div>
+</body>
+</html>
+
+<!-- 
+a paw ka move nae out ka move ka 16px pl kwr tr 32px m hok bu br lo ll sin sr kyi 
+kyr htl element shi yin tot 32 kwr ml myin kyound ly twy lo myin
+
+sr kyound ta ku htl ko a lal po chin yin vertical alite po chin yin line-height tone lo ya tl 
+dr py mae sr kyound ka ta ku pl shi ya ml value ko kya block yae height ko kyi
+
+name() nae twal lr yin function lo kw tl-----function=name(parameter)
+
+box twy ko hover htout lo ywae sy chin yin --transform=translate()
+
+ease ka hwat hwat chin nay tl a lal mr myn tl nout mr nay  ( nay myn nay)
+
+ease-in ka hwat kr ne nae a lal mr nay tl nout sone mr myn myn hwat tl pyn lr ll r lo pl( nay nay myn)
+
+ease-out ka sa sa hwat chin myn tl ta wat nae a sone mr nay twr tl(myn nay nay )
+ 
+ease-in-out ka sa sa mr nay a lal mr myan a nout mr pyn nay(nay myn nay)
+
+linear ka a choe nyi nyi nae py htr tae time paw mr same rate nae twr
+ -->
+

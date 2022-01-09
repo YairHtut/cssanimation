@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>transform origin</title>
+	<style type="text/css">
+		img{
+			width: 300px;
+			height: 200px;
+			display: block;
+			margin: auto;
+			margin-top: 200px;
+			transition: all 2s;
+		/*	transform-origin: top;*/ /*top tone lite yin pone yae htate yae center ka ny p lal tr*/
+		/*	transform-origin: bottom; */  /* bottom tone yin out sone yae a lal ka ny clockwise a tine lal tl*/
+		/*	transform-origin: left; */ /* bal bat yae a lal ka a lote lote tr */
+ 			/*transform-origin: right;*/ /*  nyr bat yae a lal ka kine p clockwise*/
+
+      /*-----------     default ka center yl clockwise yl------------*/
+
+      	/*	transform-origin: left top;*/
+      	/*	transform-origin: right top;*/
+      	/*	transform-origin: left bottom;*/
+      	/*	transform-origin: right bottom;*/
+
+      	transform-origin:30% 80%;  /* sin sr pone san ko right bottom nae */
+      	/*transform-origin: 150px 100px;*/ /* px nae ll ya tl d kg so center kya ny ml sin sr kyi*/
+
+
+
+		}
+		img:hover{
+
+			transform: rotate(45deg); /*pone man ka pone yae center tae tae ka lal tr
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<img src="img/cat1.jpg" alt="cat-photo" id="cat-photo" class="cat-photo" />
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation effect</title>
+	<style type="text/css">
+		body{
+			height: 100vh;
+			font-family: sans-serif;
+			background-color: palegoldenrod;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			overflow: hidden;
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: #ff0;
+			position: relative;
+		}
+		h1{
+			font-size: 24ps;
+			text-align: center;
+			text-transform: uppercase;
+
+			padding: 0;
+			margin: 0;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		h1 span{
+			color: green;
+			font-size: 30px;
+		}
+		.box::before,
+		.box::after,
+		.rotate::before,
+		.rotate::after{
+			box-sizing: border-box;
+			content: '';
+			width: 100%;
+			height: 100%;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.box::before{
+			border-top: 4px solid green;
+			border-bottom: 4px solid green;
+
+			transform: scaleX(0);
+			transition: all 0.5s;
+		}
+		.box::after{
+			border-left: 4px solid green;
+			border-right: 4px solid green;
+
+			transform: scaleY(0);
+			transition: all 0.5s;
+		}
+		.box:hover::before{
+			transform: scaleX(1.0);
+		}
+		.box:hover::after{
+			transform: scaleY(1.0);
+			transition-delay: 0.5s;
+		}
+		.rotate{
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: relative;
+
+			transform: rotate(45deg);
+		}
+		.rotate::before{
+			border-top: 4px solid green;
+			border-bottom: 4px solid green;
+
+			transform: scaleX(0);
+			transition: all 0.5s;
+		}
+		.rotate::after{
+			border-left: 4px solid green;
+			border-right: 4px solid green;
+
+			transform: scaleY(0);
+			transition: all 0.5s;
+		}
+		.box:hover .rotate::before{
+			transform: scaleX(1.0);
+			transition-delay: 1s;
+		}
+		.box:hover .rotate::after{
+			transform: scaleY(1.0);
+			transition-delay: 1.5s;
+		}
+	</style>
+</head>
+<body>
+<div class="box">
+	<span class="rotate"></span>
+	<h1>
+		DLT
+		<br/>
+		<span>Css</span>
+		<br/>
+		animation
+		<br/>
+		batch 2
+	</h1>
+</div>
+</body>
+</html>

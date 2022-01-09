@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animation effect</title>
+	<style type="text/css">
+			body{
+			height: 100vh;
+			font-family: sans-serif;
+			background-color: palegoldenrod;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			overflow: hidden;
+		}
+		h1{
+			text-align: center;
+			color: #fff;
+			font-size: 90px;
+			letter-spacing: 15px;
+			line-height: 90px;
+			text-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+
+			animation-name: myani;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function:linear ;
+			animation-direction: alternate;
+
+			animation: myani 3s infinite linear alternate;
+
+
+		}
+		@keyframes myani{
+			from{
+				transform: rotate(10deg);
+			}
+			to{
+				transform: rotate(-10deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS <br/> ANIMATION <br/> PROJECT</h1>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>css transition</title>
+<style type="text/css">
+button{
+	width: 290px;
+	height: 80px;
+	background-color:#fff;
+	color: #000;
+	font-size: 28px;
+	border: 0;
+/*	transition-property: width,background-color,color,border-radius;
+	transition-duration: 2s;*/
+transition-property: all ;	
+transition-duration: 3s;
+transition-timing-function: linear;  /*effedct ka 5 myo shi L3 mr*/
+}
+button:hover{
+/*	width: 600px;*/
+	background-color: #000;
+	color: #fff;
+/*	border-radius: 50px;*/
+}
+
+
+</style>
+</head>
+<body>
+<button> css transition</button>
+</body>
+</html>
+
+
+<!-- 
+transition-property mr kaw tae property ka out ka ny pyn kaw htr tr a paw ka hr ka ny m hok bu
+
+transition-property mr a kone lone ko htr chin yin tot ( ***all***) ko tone
+
+short-hand nae yay chin yin (transition--transitionProperty---transitionDuration ----transition-timing-function)a sin tine yay
+
+
+ -->

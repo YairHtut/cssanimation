@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>key frames</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		div{
+			width: 150px;
+			height: 150px;
+			background: red;
+
+			animation-name: myani;
+			animation-duration: 5s;
+			animation-fill-mode: forwards;
+			/*animation p tae ny yr mr yat twr ml*/
+		/*	animation-delay: 3s;*/
+		}
+		@keyframes myani{
+			0%{
+				transform: translate(0px);
+			}
+			50%{
+				transform: translate(1000px);
+			}
+			100%{
+				transform: translate(1000px,500px);
+			}
+		}
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

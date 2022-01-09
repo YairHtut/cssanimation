@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>button effect</title>
+<style type="text/css">
+	body{
+		font-family: sans-serif;
+		height: 100vh;
+
+		display: flex;
+		justify-content: center;
+		align-items:center;
+
+		margin: 0;
+		overflow: hidden;
+	}
+	.btn{
+		background: none; 
+/*btn mr so yin backgroundcolor nae none lote p button yae default ko change lo m ya bu background nae pl ya tl (default  ka gray) none or transparent*/
+	font-size: 45px;
+	color: tomato;
+	border: 2px solid tomato;
+	padding: 40px 80px;
+	text-transform: uppercase;
+	cursor: pointer;  /*a tag nae yay yin cursor ka lat ly phyit tl button nae so m phyit bu*/
+
+	position: relative;
+
+	overflow: hidden;
+	}
+
+	.btn::before{
+		content: " ";
+
+		width: 100%;
+		height: 0;
+		background-color: tomato;
+
+		border-radius: 0 0 50% 50%;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		z-index: -1;
+		transition: all 2s;
+	}
+	.btn:hover::before{
+		height: 190%;
+	}
+	.btn:hover{
+		color: #fff;
+	}
+
+
+
+</style>
+
+</head>
+<body>
+<button class="btn">button</button>
+</body>
+</html>

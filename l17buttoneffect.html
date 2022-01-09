@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>button effect</title>
+	<style type="text/css">
+		body{
+			height: 100vh;
+			font-family: sans-serif;
+			background-color: #222;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			margin: 0;
+			overflow: hidden;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 45px;
+			border: 4px solid #fff;
+			padding: 40px 80px;
+			position: relative;
+			overflow: hidden;
+			transition: all 2s;
+		}
+		a::before{
+			content: " ";
+			width: 100%;
+			height: 50%;
+
+			background-color: #fff;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(-100%) rotate(45deg);
+		/*	transform lote yin 0,0 nae a myl kyi pone swal p tot 
+		 code ka a sin tine a lote lote tr m lo translate nae rotate ko a shae a nout py yin result tu mr m hok bu
+		p tot d transform mr , cormer ll m kan ya bu kan yin ll a lote m lote bu*/
+			transition: all 2s;
+		}
+		a:hover::before{
+			transform:translate(100%) rotate(45deg) ;
+		}
+		a:hover{
+			background-color: tomato;
+
+		}
+	</style>
+</head>
+<body>
+<a href="#">HOVER ME</a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		div{
+			width: 150px;
+			height: 150px;
+			background: red;
+
+			animation-name: myani;
+			animation-duration: 5s;
+			animation-fill-mode: forwards;
+			
+			animation-iteration-count: infinite;
+			/*animation-timing-function:ease ;
+
+			animation-timing-function:ease-in ;
+
+
+			animation-timing-function:ease-out ;
+
+			animation-timing-function:ease-in-out ;*/
+			animation-timing-function: linear;
+
+		/*animation-direction: reverse;*/  /*default ka normal*/
+		/*	animation-direction: alternate;*/ 
+			/*animation-direction: alternate-reverse; */
+
+			/*short hand*/
+		/*name duration count time-function direction delay*/
+			animation: myani 5s infinite linear alternate 2s;
+		}
+		@keyframes myani{
+			0%{
+				transform: translate(500px);
+			}
+			50%{
+				transform: translate(1000px);
+			}
+			100%{
+				transform: translate(1000px,500px);
+			}
+		}
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

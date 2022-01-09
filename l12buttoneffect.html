@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>button effect</title>
+	<style type="text/css">
+		body{
+			/*margin: 0;*//* or overflow: hidden;  thu ka lone wa scroll swal lo m ya tot bu sr twy  bl lout myr lrlr scroll m ya tot pr */
+			overflow: hidden;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		a{ 
+			font-family: sans-serif; /* a paw sone mr yay*/
+			width: 300px;
+			height: 100px;
+			color: #444;
+			border: 3px black solid;
+			font-size: 30px;
+			text-decoration: none;
+			line-height: 100px;
+			text-align: center;
+			transform-origin: right top;
+			transition: all 2s;
+			/*padding: 40px 80px;*/
+			position: relative;
+			overflow: hidden;
+
+		}
+	/*	a::before{
+			content: "hay";
+		}
+		a::after{
+			content: "bye";
+		}*/
+		a::before{
+			content: " ";
+
+			width: 100%;
+			height: 100%;
+
+			background-color: yellow;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+		/*	opacity: 1;*/
+
+			z-index: -1; /*z-index yae default ka a myl zero*/
+
+
+			transform: rotate(90deg);
+			transform-origin: right top;
+
+		/*	transform: translateY(-100px);*/
+
+			transition: all 3s;
+		}
+		a:hover::before{
+			transform: rotate(0deg); /*nout sone mr overflow htae pho m mae nae*/
+
+		/*transform: translateY(0px);*/
+		}
+
+	</style>
+</head>
+<body>
+<a href="#">HOVER ME</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
